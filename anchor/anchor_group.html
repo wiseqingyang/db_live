@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="testJS.js"></script>
+    <script src="messageIdDef.js"></script>
+    <script src="anchor_group.js"></script>
+    <title>groupBuy</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<!-- <script>
+url = 'ws://test.dbljoy.com:2000';
+room_id = 1001;
+</script> -->
+
+<body>
+    <div class="superView" id="rootvue">
+        <div class="topInfo">
+            <div class="scrollView rankList topViews">
+                <transition-group tag="ul" class='slide-ul' name="list">
+                    <li v-for="(list,index) in ranklistList" :key="index" v-show="index===currentRankIndex">
+                        <ranklist :titleimage="titleImage" :datas="list" :index='index'></ranklist>
+                    </li>
+                </transition-group>
+                <!-- <div class="carousel-items">
+                    <span v-for="(item,index) in ranklistList.length" :class="{'active':index===currentRankIndex}"></span>
+                </div> -->
+
+            </div>
+            <div class="graySeg topViews">
+            </div>
+            <div class="scrollView groupList topViews">
+                <transition-group tag="ul" class='slide-ul' name="list">
+                    <li v-if="groupInfosModels[0].length == 0" key="none">
+                        <groupplaceholder></groupplaceholder>
+                    </li>
+                    <li v-for="(list,index) in groupInfosModels[0]" :key="index" v-show="index===currentMatchIndex1"
+                        v-else>
+                        <grouplist :groupinfo="list"></grouplist>
+                    </li>
+                </transition-group>
+                <!-- <div class="carousel-items">
+                            <span v-for="(item,index) in ranklistList.length" :class="{'active':index===currentRankIndex}"></span>
+                        </div> -->
+            </div>
+            <div class="graySeg topViews">
+
+            </div>
+            <div class="scrollView groupList topViews">
+                <transition-group tag="ul" class='slide-ul' name="list">
+                    <li v-if="groupInfosModels[1].length == 0" key="none">
+                        <groupplaceholder></groupplaceholder>
+                    </li>
+                    <li v-else v-for="(list,index) in groupInfosModels[1]" :key="index" v-show="index===currentMatchIndex2">
+                        <grouplist :groupinfo="list"></grouplist>
+                    </li>
+                </transition-group>
+                <!-- <div class="carousel-items">
+                            <span v-for="(item,index) in ranklistList.length" :class="{'active':index===currentRankIndex}"></span>
+                        </div> -->
+            </div>
+        </div>
+        <div class="bottView">
+            <div class="left-view">
+                <div class="sport-lottery">
+                    <img class="lottery-icon" src="./src/lottery-icon.png" alt="logo" srcset="">
+                    <span class="lottery-text"><label>助力公益 乐善人生</label></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<template id="ranklisttmp">
+    <div class="tmplateRoot">
+        <div class="rankTitle">
+            <img :src="titleimage[index]" alt="">
+        </div>
+        <div class="rankMenu menuBk">
+            <span class="menu1">彩票名称</span>
+            <span class="menu2">中奖用户</span>
+            <span class="menu3">中奖金额</span>
+        </div>
+        <div v-if="datas.length > 0">
+            <div class="rankLine" v-for="(rankdata,index) in datas" :key="index">
+                <span class="menu1">{{rankdata.ticketname}}</span>
+                <span class="menu2">{{rankdata.bettingname}}</span>
+                <span class="menu3">{{rankdata.winamount}}</span>
+            </div>
+        </div>
+        <div class="placeholderPic" v-else>
+            <img src="./src/norankplaceholder.png" alt="快来成为耀眼的明星" class="placeholderimg">
+        </div>
+    </div>
+</template>
+
+<template id="groupBuyTemplate">
+    <div class="tmplateRoot">
+        <div class="groupTitle">
+            <span class="title1">{{groupinfo.groupcount}}人合买-{{groupinfo.wintypedesc}}</span>
+            <span class="title2">{{groupinfo.statusdesc}}</span>
+        </div>
+        <div class="rankMenu menuBk">
+            <span class="match1">昵称</span>
+            <span class="match2">合买彩票</span>
+            <span class="match3">待刮</span>
+            <span class="match4">奖金</span>
+        </div>
+        <div v-if="groupinfo.status == 3" class="result">
+            <img src="./src/result_frame.png" alt="" class="resultitem">
+            <span class="resultitem matchTitle"><b>{{groupinfo.groupcount}}人合买-{{groupinfo.wintypedesc}}</b></span>
+            <p class="resultitem totalAward">{{groupinfo.totalAward}}元</p>
+            <div v-if="groupinfo.winnerNum == 1 || groupinfo.winnerNum == 2" class="winnerFrame">
+                <div class="headDiv">
+                    <span v-for="head in groupinfo.winnerNum">
+                        <img :src="groupinfo.winners[head - 1].usericon" alt="头像" class="userhead">
+                    </span>
+                </div>
+                <div class="nameContent">
+                    <span v-if="groupinfo.winnerNum == 1">{{groupinfo.winners[0].bettingname}}</span>
+                    <span v-else>两人并列 奖金均分</span>
+                </div>
+                <div class="awardContent">
+                    <span>以{{groupinfo.winners[0].bonus}}元奖金获胜</span>
+                </div>
+            </div>
+            <div v-else class="winnerFrame">
+                <div class="moreNames">
+                    <span v-for="index in 2" class="moreInfos">
+                        <label>{{groupinfo.winners[index - 1].bettingname}}</label>
+                    </span>
+                </div>
+                <div class="moreContent">
+                    <span>等{{groupinfo.winnerNum}}人均分奖金</span>
+                </div>
+            </div>
+        </div>
+        <div v-else>
+            <div class="infoLine" v-for="(groupData, index) in groupinfo.bettingarr" :key="groupData.orderid">
+                <span class="match1 matchData">{{groupData.bettingname}}</span>
+                <span class="match2 matchData">{{groupData.ticketamount}}张{{groupData.tickname}}</span>
+                <span class="match3 matchData">{{groupData.unfinishamount}}</span>
+                <span class="match4 matchData">{{groupData.bonus}}</span>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="groupPlaceholder">
+    <div class="tmplateRoot">
+        <div class="groupTitle plcaeholderTitle">
+            <span>合买信息区</span>
+        </div>
+        <div class="rankMenu menuBk">
+            <span class="match1">昵称</span>
+            <span class="match2">合买彩票</span>
+            <span class="match3">待刮</span>
+            <span class="match4">奖金</span>
+        </div>
+        <div>
+            <img src="./src/nomatchplaceholder.png" alt="爱拼才会赢" class="placeholderimg">
+        </div>
+    </div>
+</template>
+
+</html>

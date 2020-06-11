@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{4192a668-6347-4964-a7a6-3727f8176bda}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{0d9391fc-53d2-402d-af75-ec0451bb4a37}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="CameraView">
+      <UniqueIdentifier>{11a98ce9-2d8d-4f6c-ab92-02a7008c81a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustomUI">
+      <UniqueIdentifier>{b5e17543-08ec-493a-8896-e2323c32343b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{274c854d-2a99-4241-8e47-47852d91c761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetManager">
+      <UniqueIdentifier>{802c519c-eb52-47e8-bc1a-eb60d8628ef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AnimationWidget">
+      <UniqueIdentifier>{9eb08371-aa73-48a6-8d7a-b33d00ea99db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LiveWidget">
+      <UniqueIdentifier>{d8f3a5e8-6c7f-4b15-a858-c730d17cf577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Login">
+      <UniqueIdentifier>{a1ecc91c-6cba-44a9-8817-34de7f50d806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{25d3c8e9-ab1b-4c4c-bbbb-26c0f874dea1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QZXing">
+      <UniqueIdentifier>{b2f42324-6ce2-4876-9505-4d82ac21bb31}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swipecard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_swipecard.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraWidget.cpp">
+      <Filter>CameraView</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageButton.cpp">
+      <Filter>CustomUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\HttpImage.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="NetManager\Net.cpp">
+      <Filter>NetManager</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationWidget\CustomDynamicWidget.cpp">
+      <Filter>AnimationWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_swipecard.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_swipecard.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Net.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Net.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HttpImage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HttpImage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CustomDynamicWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CustomDynamicWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CameraWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CameraWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LiveFreeWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LiveFreeWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveWidget\LiveFreeWidget.cpp">
+      <Filter>LiveWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveWidget\LiveGraybk.cpp">
+      <Filter>LiveWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LiveGraybk.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LiveGraybk.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveWidget\LiveHeadWidget.cpp">
+      <Filter>LiveWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LiveHeadWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LiveHeadWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LiveTitleWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LiveTitleWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveWidget\LiveTitleWidget.cpp">
+      <Filter>LiveWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveWidget\LivePortWidget.cpp">
+      <Filter>LiveWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LivePortWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LivePortWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveWidget\LiveResultView.cpp">
+      <Filter>LiveWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LiveResultView.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LiveResultView.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Login\LoginDialog.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LoginDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LoginDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\HttpUint.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HttpUint.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HttpUint.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_UserConfig.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_UserConfig.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\UserConfig.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AnimationCoins.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AnimationCoins.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationWidget\AnimationCoins.cpp">
+      <Filter>LiveWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Discern.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qzxing.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qzxing.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qzxing_plugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qzxing_plugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\FunctionDef.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="CutPicture.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RecognizeThread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RecognizeThread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\RecognizeThread.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Login\NoFocusFrameDelegate.cpp">
+      <Filter>Login</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_NoFocusFrameDelegate.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_NoFocusFrameDelegate.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_icon.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CutAndRecgnize.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CutAndRecgnize.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CutAndRecgnize.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LotteryManager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LotteryManager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveWidget\LiveLeftNumWidget.cpp">
+      <Filter>LiveWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LiveLeftNumWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LiveLeftNumWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\LotteryManager.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="LiveWidget\LiveBigAward.cpp">
+      <Filter>LiveWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LiveBigAward.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LiveBigAward.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="swipecard.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="swipecard.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CameraWidget.h">
+      <Filter>CameraView</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Utils\HttpImage.h">
+      <Filter>Utils</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NetManager\Net.h">
+      <Filter>NetManager</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AnimationWidget\CustomDynamicWidget.h">
+      <Filter>AnimationWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LiveWidget\LiveFreeWidget.h">
+      <Filter>LiveWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LiveWidget\LiveGraybk.h">
+      <Filter>LiveWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LiveWidget\LiveHeadWidget.h">
+      <Filter>LiveWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LiveWidget\LiveTitleWidget.h">
+      <Filter>LiveWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LiveWidget\LivePortWidget.h">
+      <Filter>LiveWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LiveWidget\LiveResultView.h">
+      <Filter>LiveWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Login\LoginDialog.h">
+      <Filter>Login</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Utils\HttpUint.h">
+      <Filter>Utils</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Utils\UserConfig.h">
+      <Filter>Utils</Filter>
+    </CustomBuild>
+    <CustomBuild Include="swipecard.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AnimationWidget\AnimationCoins.h">
+      <Filter>LiveWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QZXing\qzxing.h">
+      <Filter>QZXing</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QZXing\qzxing_plugin.h">
+      <Filter>QZXing</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Utils\RecognizeThread.h">
+      <Filter>Utils</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Login\NoFocusFrameDelegate.h">
+      <Filter>Login</Filter>
+    </CustomBuild>
+    <CustomBuild Include="icon.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Utils\CutAndRecgnize.h">
+      <Filter>Utils</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LiveWidget\LiveLeftNumWidget.h">
+      <Filter>LiveWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Utils\LotteryManager.h">
+      <Filter>Utils</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LiveWidget\LiveBigAward.h">
+      <Filter>LiveWidget</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_swipecard.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageButton.h">
+      <Filter>CustomUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_LoginDialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\MessageDef.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\eloamDll.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="NetManager\MessageIdDef.h">
+      <Filter>NetManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Discern.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="QZXing\qzxing_global.h">
+      <Filter>QZXing</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\FunctionDef.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CutPicture.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SwipeCard.rc" />
+  </ItemGroup>
+</Project>

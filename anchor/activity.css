@@ -1,0 +1,55 @@
+.background {
+    width: 1920px;
+    height: 1550px;
+}
+
+.left-view {
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.activity {
+    margin-top: 840px; 
+    /* 230 + 600 */
+    margin-left: 680px;
+    width: 200px;
+    animation: wiggle 2s infinite;
+}
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(15deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(10deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40% {
+        transform: rotateZ(4deg);
+    }
+    45%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+.activityTime {
+    margin-top: -15px;
+    margin-left: 680px;
+    font-size: 40px;
+    color: rgb(237, 27, 71);
+    visibility: hidden;
+    /* font-family: "SourceHanSansCN-Normal"; */
+    /* (237,27,71) */
+}
+
